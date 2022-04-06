@@ -1,0 +1,76 @@
+/* Small Screen */
+.container {
+  background-color: #4297A0;
+  font-family: Sans-serif;
+  padding: 1rem;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__brand {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 225, 0.863) !important;
+  text-shadow: 1px 1px 1px rgba(245, 236, 236, 0.7);
+}
+
+.navbar__list {
+  list-style: none;
+  color: rgb(255, 255, 225) !important;
+  text-shadow: 1px 1px 1px rgba(245, 236, 236, 0.7);
+}
+
+.navbar__item {
+  margin-bottom: 1rem;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar__brand {
+    margin-bottom: 0;
+  }
+
+  .navbar__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar__item {
+    margin: 0 1rem;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  /* 
+   * Nothing TODO HERE.
+   * We haven't styling Navbar.
+   */
+  .navbar {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar__brand {
+    margin-bottom: 0;
+  }
+
+  .navbar__list {
+    flex-direction: row;
+  }
+
+  .navbar__item {
+    margin: 1rem;
+  }
+}
